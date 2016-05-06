@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WP Async CSS\n"
-"POT-Creation-Date: 2016-05-06 18:40+0200\n"
-"PO-Revision-Date: 2016-05-06 18:43+0200\n"
+"POT-Creation-Date: 2016-05-06 20:01+0200\n"
+"PO-Revision-Date: 2016-05-06 20:04+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nb\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.3\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: async-css-frontend.php\n"
+"X-Poedit-WPHeader: wp-async-css.php\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -20,22 +20,36 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: async-css-frontend.php:159
-msgid "Here you can select which stylesheets you want to load asynchronously."
+#: wp-async-css.php:167
+msgid ""
+"If you found this plugin useful and want to support it you can donate with "
+"PayPal here :)"
 msgstr ""
-"Her kan du velge hvilke stilsett-filer du ønsker at skal lastes asynkront."
+"Hvis du fant denne plugin'en nyttig og ønsker å støtte så kan du donere med "
+"PayPal her :)"
 
-#: async-css-frontend.php:160
+#: wp-async-css.php:179
+msgid "Here you can select which stylesheets you want to load asynchronously."
+msgstr "Her kan du velge hvilke stilsett-filer som skal lastes asynkront."
+
+#: wp-async-css.php:180
 msgid ""
 "Note: If you cannot find the handle you are looking for please visit your "
 "frontpage to update the handle-list."
 msgstr ""
-"Merk: Dersom du ikke finner den aktuelle filen i listen så gå til forsiden "
-"for å oppdatere listen."
+"Merk: Dersom du ikke finner ønsket stilsett-fil så vennligst navigér til "
+"forsiden for å oppdatere listen over tilgjengelige stilsett."
 
-#: async-css-frontend.php:165 async-css-frontend.php:168
+#: wp-async-css.php:187 wp-async-css.php:190
 msgid "Select handles"
-msgstr "Velg filer"
+msgstr "Velg stilsett-filer"
+
+#: wp-async-css.php:200
+msgid ""
+"Please navigate to your frontpage to fetch the list of available handles."
+msgstr ""
+"Vennligst navigér til din forside for å oppdatere listen over tilgjengelige "
+"stilsett-filer.s"
 
 #. Plugin Name of the plugin/theme
 msgid "WP Async CSS"
