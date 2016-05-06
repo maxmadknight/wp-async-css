@@ -1,1 +1,1 @@
-# async-css-frontend
+# wp-async-css

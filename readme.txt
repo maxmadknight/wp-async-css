@@ -1,5 +1,5 @@
 === WP Async CSS ===
-Tags: stylesheet,css,async,asynchronous,frontend
+Tags: stylesheet,css,async,asynchronous
 Requires at least: 3.5.0
 Tested up to: 4.5.1
 Stable tag: 1.1

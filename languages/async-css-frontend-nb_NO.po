@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.3\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-WPHeader: async-css-frontend.php\n"
+"X-Poedit-WPHeader: async-css-wp-async-css.php\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -20,12 +20,12 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: async-css-frontend.php:159
+#: wp-async-css.php:159
 msgid "Here you can select which stylesheets you want to load asynchronously."
 msgstr ""
 "Her kan du velge hvilke stilsett-filer du ønsker at skal lastes asynkront."
 
-#: async-css-frontend.php:160
+#: wp-async-css.php:160
 msgid ""
 "Note: If you cannot find the handle you are looking for please visit your "
 "frontpage to update the handle-list."
@@ -33,7 +33,7 @@ msgstr ""
 "Merk: Dersom du ikke finner den aktuelle filen i listen så gå til forsiden "
 "for å oppdatere listen."
 
-#: async-css-frontend.php:165 async-css-frontend.php:168
+#: wp-async-css.php:165 wp-async-css.php:168
 msgid "Select handles"
 msgstr "Velg filer"
 
