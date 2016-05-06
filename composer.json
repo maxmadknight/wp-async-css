@@ -1,0 +1,16 @@
+{
+    "name": "roberts91/wp-async-css",
+    "type": "wordpress-plugin",
+    "description": "Adds a shortcode that creates a clearfix",
+    "authors": [
+        {
+            "name": "Robert Sæther",
+            "email": "robert@allegro.no"
+        }
+    ],
+    "extra": {
+	    "branch-alias": {
+	        "stable": "1.0"
+	    }
+	}
+}
