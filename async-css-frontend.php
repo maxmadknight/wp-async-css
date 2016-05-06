@@ -1,10 +1,10 @@
 <?php
 
 /*
-Plugin Name: Async CSS Frontend
+Plugin Name: WP Async CSS
 Plugin URI: 
 Description: This plugin will hook onto the WordPress style handling system and load the selected stylesheets asynchronous.
-Version: 1.0
+Version: 1.1
 Text Domain: async-css-frontend
 Author: Robert Sæther
 Author URI: https://github.com/roberts91
@@ -108,23 +108,24 @@ class Async_CSS_frontend {
         
         // Print out in head
         echo '<script>' . $content . '</script>';
+        
     }
     
     // Edit stylesheet-inclusion method
     public function custom_style_loader( $html, $handle, $href )
     {
-    
         // We do not touch this stylesheet if not in array
         if( ! in_array( $handle, $this->whitelisted_handles ) ) return $html;
     
         // Try to catch media-attribute in HTML-tag
         preg_match('/media=\'(.*)\'/', $html, $match);
     
-        // Extract media-attribute
+        // Extract media-attribute, default all
         $media = (isset($match[1]) ? $match[1] : 'all');
     
         // Return new markup
-        return '<!-- ' . $handle . '-->' . "\n" . '<script>loadCSS("' . $href . '",0,"' . $media . '");</script>' . "\n";
+        //return '<!-- ' . $handle . '-->' . "\n" . '<script>loadCSS("' . $href . '",0,"' . $media . '");</script>' . "\n";
+        return '<script>loadCSS("' . $href . '",0,"' . $media . '");</script>' . "\n";
     
     }
     
@@ -133,9 +134,8 @@ class Async_CSS_frontend {
     // Register optionspage and settings
     public function add_options_page()
     {
-        
         // Register optionspage
-        add_options_page( 'Async CSS Frontend', 'Async CSS Frontend', 'manage_options', 'async-css-frontend', array($this, 'options_page_view'));
+        add_options_page( 'WP Async CSS', 'WP Async CSS', 'manage_options', 'async-css-frontend', array($this, 'options_page_view'));
         
         // Register settings
         add_action( 'admin_init', array($this, 'register_settings') );
@@ -153,7 +153,7 @@ class Async_CSS_frontend {
     {
         ?>
         <div class="wrap">
-            <h2>Async CSS Frontend</h2>
+            <h2>WP Async CSS</h2>
             <form method="post" action="options.php">
                 <p>
                     <?php _e('Here you can select which stylesheets you want to load asynchronously.', 'async-css-frontend'); ?><br>

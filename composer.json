@@ -1,16 +1,16 @@
 {
     "name": "roberts91/wp-async-css",
     "type": "wordpress-plugin",
-    "description": "Adds a shortcode that creates a clearfix",
+    "description": "This plugin will hook onto the WordPress style handling system and load the selected stylesheets asynchronous.",
     "authors": [
         {
             "name": "Robert Sæther",
-            "email": "robert@allegro.no"
+            "email": "robert.sather@outlook.com"
         }
     ],
     "extra": {
 	    "branch-alias": {
-	        "stable": "1.0"
+	        "stable": "1.1"
 	    }
 	}
 }
