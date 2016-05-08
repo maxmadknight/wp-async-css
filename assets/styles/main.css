@@ -1,0 +1,14 @@
+#wpac-wrapper #wpac-donate-box {
+    background: white;
+    border: 1px solid #eeeeee;
+    float: right;
+    padding: 15px;
+    max-width: 200px;
+}
+#wpac-wrapper .left-marg {
+    margin-left: 6px;
+}
+#wpac-wrapper .form-table {
+    width: auto;
+    clear: left;
+}
