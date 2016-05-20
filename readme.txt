@@ -4,7 +4,7 @@ Donate link: http://donatenow.wc.lt/?donate=robert.sather@outlook.com&method=Pay
 Tags: stylesheet, css, async, asynchronous
 Requires at least: 3.5
 Tested up to: 4.5.2
-Stable tag: 1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ This plugin will hook into the WordPress style handling system and loads the sel
 
 == Description ==
 
-When loading a webpage with a lot of CSS-files then the loading time can go through the roof!
+When loading a webpage with a lot of CSS-files the loading time can go through the roof!
 With this plugin you can choose which files to load asynchronously and therefore cut down the time before the page starts to show.
 
 The plugin uses a <a href="https://remysharp.com/2010/10/08/what-is-a-polyfill" target="_blank">polyfill</a> called <a href="https://github.com/filamentgroup/loadCSS" target="_blank">loadCSS</a>.
@@ -21,7 +21,8 @@ This allows us to use JavaScript to load selected CSS-files after the page have 
 The recommended use of this is to load your main stylesheet synchronously and then select non-vital CSS-files to load after (async).
 Non-vital CSS-files can be for example fonts, icons, template-specific CSS, plugin CSS etc.
 
-If you have a bug or improvement request please do post to a thread in the support section!
+If you find a bug or have an idea for improvement please do post to a thread in the support section!
+Would be much appreaciated!
 
 Thanks :)
 

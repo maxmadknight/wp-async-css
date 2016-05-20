@@ -4,7 +4,7 @@
 Plugin Name: WP Async CSS
 Plugin URI: 
 Description: This plugin will hook onto the WordPress style handling system and load the selected stylesheets asynchronous.
-Version: 1.1
+Version: 1.2
 Text Domain: wp-async-css
 Author: Robert Sæther
 Author URI: https://github.com/roberts91
@@ -68,17 +68,27 @@ class WP_Async_CSS {
         else
         {
             
-            // This filter modifies the inclusion of stylesheets in the header portion
-            add_filter('style_loader_tag', array($this, 'custom_style_loader'), 9999, 3);
+            // Make sure that we don't load this on login screen (sorry to the guys that actually need this btw. Contact me and i'll fix it for ya!)
+            if(!$this->is_login_page())
+            {
+                // Adds loadCSS to the head-portion of the page
+                add_action('wp_head', array($this, 'loadcss_init'), 7);
             
-            // Adds loadCSS to the head-portion of the page
-            add_action('wp_head', array($this, 'loadcss_init'), 7);
+                // This filter edits 
+                add_filter('style_loader_tag', array($this, 'custom_style_loader'), 9999, 3);
             
-            // This function caches all the handles of the stylesheets that are loaded during av front-end request
-            add_action('wp_print_styles', array($this, 'cache_stylesheet_handles'), 9999);
+                // This function caches all the handles of the stylesheets that are loaded during av front-end request
+                add_action('wp_print_styles', array($this, 'cache_stylesheet_handles'), 9999);
+            }
             
         }
         
+    }
+    
+    // Check if we are on the login og registraion page
+    private function is_login_page()
+    {
+        return in_array($GLOBALS['pagenow'], array('wp-login.php', 'wp-register.php'));
     }
     
     // Add styles to admin
