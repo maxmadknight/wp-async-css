@@ -58,10 +58,10 @@ Here you either need to be a developer or ask one for help.
 
 == Changelog ==
 
-= 1.0 =
+= 1.1 =
 * Imported plugin to Git and WordPress SVN repository.
 
-= 1.1 =
+= 1.2 =
 * Removed async CSS loading on login and registration form screen.
 
 == Upgrade Notice ==
