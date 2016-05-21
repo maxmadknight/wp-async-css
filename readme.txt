@@ -8,7 +8,7 @@ Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will hook into the WordPress style handling system and loads the selected stylesheets asynchronous.
+This plugin will hook into the WordPress style handling system and load the selected stylesheets asynchronous.
 
 == Description ==
 
@@ -60,5 +60,8 @@ Here you either need to be a developer or ask one for help.
 
 = 1.0 =
 * Imported plugin to Git and WordPress SVN repository.
+
+= 1.1 =
+* Removed async CSS loading on login and registration form screen.
 
 == Upgrade Notice ==
