@@ -103,7 +103,7 @@ class WP_Async_CSS {
     public function loadcss_init()
     {
         // Get loadCSS-file
-        $loadcss_file = $this->plugin_url . 'assets/scripts/loadCSS' . ($this->dev_mode ? '' : '.min') . '.js';
+        $loadcss_file = dirname(__FILE__) . '/assets/scripts/loadCSS' . ($this->dev_mode ? '' : '.min') . '.js';
         
         // Fetch content
         $content = file_get_contents($loadcss_file);
